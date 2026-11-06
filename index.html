@@ -3,118 +3,125 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pneumatic &amp; Electro-Pneumatic Control Training | GVS Technology</title>
-<meta name="description" content="5-day, 40-hour training in industrial pneumatics, electro-pneumatics, PLC integration and simulation software. ₹9,000 per participant.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A2540'/%3E%3Crect x='5' y='11' width='14' height='10' fill='none' stroke='%239FD3F5' stroke-width='2'/%3E%3Cpath d='M19 16h9' stroke='%239FD3F5' stroke-width='3'/%3E%3C/svg%3E">
+<title>GVS Technology | Mechatronics, Data Science (AI &amp; ML) and Electric Vehicles Training</title>
+<meta name="description" content="GVS Technology offers hands-on training in Mechatronics (Robotics and Automation), Data Science (AI and ML) and Electric Vehicles, with placement and internship support.">
+<link rel="icon" href="images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#0A2540;--blue:#0B5C9E;--sky:#9FD3F5;--paper:#F6FAFD;--line:#D5E3F0;--accent:#C2410C;--muted:#4A5B6B;--text:#1B2B3A}
+:root{--ink:#0E2349;--blue:#274F96;--cyan:#1E9BD7;--paper:#F4F8FC;--line:#D6E2EE;--accent:#C2410C;--muted:#4A5B6B;--text:#1B2B3A}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:Barlow,system-ui,Arial,sans-serif;font-size:17px;line-height:1.6;color:var(--text);background:var(--paper)}
+body{margin:0;font-family:Barlow,system-ui,Arial,sans-serif;font-size:17px;line-height:1.65;color:var(--text);background:#fff}
 h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;line-height:1.05;margin:0;color:var(--ink);font-weight:700}
+img{max-width:100%;height:auto;display:block}
 a{color:var(--blue)}
 :focus-visible{outline:3px solid var(--accent);outline-offset:3px}
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
 .btn{display:inline-block;padding:13px 22px;border-radius:4px;font-weight:600;text-decoration:none;font-size:16px;border:2px solid transparent}
 .btn.main{background:var(--accent);color:#fff}
 .btn.main:hover{background:#9A3412}
-.btn.ghost{border-color:var(--sky);color:#fff}
-.btn.ghost:hover{background:rgba(159,211,245,.15)}
+.btn.ghost{border-color:#9CC9EA;color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
 .btn.dark{border-color:var(--ink);color:var(--ink)}
 .btn.dark:hover{background:var(--ink);color:#fff}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
 
-header{background:#fff;border-bottom:1px solid var(--line)}
-.brand img{display:block;height:64px;width:auto}
-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap}
-.brand{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:28px;letter-spacing:.04em;color:#fff;text-decoration:none}
-.brand small{font-family:Barlow,sans-serif;font-weight:500;font-size:11px;letter-spacing:.35em;color:var(--sky);margin-left:8px}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.brand img{height:62px;width:auto}
 nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
 nav a{color:var(--ink);text-decoration:none;font-weight:500}
 nav a:hover{color:var(--blue)}
-nav .btn{padding:9px 16px;color:#fff}
+nav a.btn{color:#fff;padding:9px 16px}
 
-.hero{background:var(--ink);color:#fff;padding:32px 0 72px}
-.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
-.hero h1{color:#fff;font-size:clamp(44px,7vw,84px);letter-spacing:-.005em}
-.hero p.lead{font-size:19px;color:#D5E3F0;max-width:34em;margin:20px 0 28px}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.facts{display:flex;gap:28px;margin:34px 0 0;padding:0;list-style:none;flex-wrap:wrap}
-.facts li{font-size:15px;color:#D5E3F0;border-top:2px solid var(--sky);padding-top:8px}
-.facts b{display:block;font-family:'Barlow Condensed',sans-serif;font-size:30px;color:#fff;line-height:1.1}
-.rig{width:100%;height:auto}
-.rig .rod{animation:stroke 4.5s ease-in-out infinite alternate}
-.rig .flow{stroke-dasharray:6 8;animation:flow 1.2s linear infinite}
-@keyframes stroke{from{transform:translateX(0)}to{transform:translateX(110px)}}
-@keyframes flow{to{stroke-dashoffset:-14}}
-@media (prefers-reduced-motion:reduce){.rig .rod,.rig .flow{animation:none}.rig .rod{transform:translateX(55px)}}
+.hero{background:linear-gradient(135deg,var(--ink) 0%,var(--blue) 70%,#1E7FBE 100%);color:#fff;padding:72px 0}
+.hero .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center}
+.hero h1{color:#fff;font-size:clamp(42px,6.4vw,78px)}
+.hero p{font-size:19px;color:#E1EEF9;max-width:34em;margin:20px 0 28px}
+.shot{background:#fff;border-radius:18px;padding:18px 18px 14px;box-shadow:0 20px 50px rgba(0,0,0,.3)}
+.shot span{display:block;text-align:center;color:var(--muted);font-size:14px;margin-top:6px}
 
-section{padding:72px 0}
-section h2{font-size:clamp(34px,5vw,52px);margin-bottom:12px}
-.sub{max-width:40em;color:var(--muted);margin:0 0 32px}
+section{padding:76px 0}
+section h2{font-size:clamp(34px,5vw,52px);margin-bottom:14px}
+.sub{max-width:42em;color:var(--muted);margin:0 0 30px;font-size:18px}
+.alt{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.two h3{font-size:32px;margin-bottom:10px}
+.two p{margin:0 0 14px}
 
-.tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:2px solid var(--ink);border-radius:6px;overflow:hidden;margin-bottom:0}
-.tabs button{font:inherit;font-weight:600;padding:14px 8px;background:#fff;color:var(--ink);border:0;border-right:1px solid var(--line);cursor:pointer;text-align:left}
-.tabs button:last-child{border-right:0}
-.tabs button span{display:block;font-family:'Barlow Condensed',sans-serif;font-size:26px;line-height:1}
-.tabs button small{display:block;font-weight:500;font-size:13px;color:var(--muted);line-height:1.25;margin-top:4px}
-.tabs button[aria-selected=true]{background:var(--ink);color:#fff}
-.tabs button[aria-selected=true] small{color:var(--sky)}
-.panel{background:#fff;border:2px solid var(--ink);border-top:0;border-radius:0 0 6px 6px;padding:32px;display:grid;grid-template-columns:200px 1fr;gap:32px;margin-bottom:24px}
-.panel[hidden]{display:none}
-.panel .art{background:var(--paper);border-radius:6px;padding:16px;align-self:start}
-.panel h3{font-size:34px;margin-bottom:2px}
-.panel .hrs{color:var(--muted);font-size:15px;margin:0 0 16px}
-.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.cols h4{margin:0 0 8px;font-size:18px;color:var(--blue)}
-.panel ul{margin:0;padding-left:20px}
-.panel li{margin-bottom:8px;font-size:16px}
-.out{margin-top:20px;padding:14px 16px;background:var(--paper);border-left:4px solid var(--accent);font-size:16px}
+.prog{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;margin-bottom:72px}
+.prog:last-child{margin-bottom:0}
+.prog h3{font-size:clamp(30px,4vw,42px);margin-bottom:6px}
+.prog .tag{color:var(--blue);font-weight:600;margin:0 0 12px}
+.prog img{border-radius:14px}
+.models{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px}
+.models li{background:#fff;border:1px solid var(--line);border-left:4px solid var(--cyan);padding:9px 14px;border-radius:4px;font-weight:500}
+.kits{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.kits figure{margin:0;background:#0E2349;border-radius:14px;padding:12px;color:#fff;font-size:14px;text-align:center}
+.kits img{border-radius:8px}
+.kits figcaption{margin-top:8px;font-weight:600}
+.flip{direction:rtl}.flip>*{direction:ltr}
+.wide{grid-column:1/-1}
 
-.fees{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.two{display:grid;grid-template-columns:1fr 1.2fr;gap:24px}
-.price{background:var(--ink);color:#fff;padding:36px;border-radius:6px}
-.price .big{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:72px;line-height:1;color:#fff}
-.price p{color:#D5E3F0;margin:8px 0 20px}
-.price h3{color:#fff;font-size:22px;margin-top:18px}
-.price ul{margin:6px 0 0;padding-left:20px;color:#D5E3F0}
-.terms{border:2px solid var(--line);padding:36px;border-radius:6px}
-.terms h3{font-size:24px;margin:0 0 6px}
-.terms table{width:100%;border-collapse:collapse;margin:8px 0 22px}
-.terms th,.terms td{text-align:left;padding:10px 0;border-bottom:1px solid var(--line);font-size:16px}
-.terms th{font-weight:600;color:var(--ink)}
-.benefit{max-width:44em;font-size:21px;line-height:1.55;color:var(--ink)}
+.work{background:var(--ink);color:#fff}
+.work h2{color:#fff}
+.work .sub{color:#D3E3F3}
+.work .grid{display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center}
+.work ol{margin:0;padding-left:22px;color:#E1EEF9}
+.work li{margin-bottom:6px}
+.fee{background:#fff;color:var(--text);border-radius:14px;padding:30px}
+.fee .big{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:64px;line-height:1;color:var(--ink)}
+.fee p{margin:6px 0 18px;color:var(--muted)}
 
-.contact{background:var(--ink);color:#fff}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:28px}
+.why div{background:#fff;border:1px solid var(--line);border-top:4px solid var(--cyan);border-radius:6px;padding:22px}
+.why h3{font-size:24px;margin-bottom:6px}
+.why p{margin:0;font-size:16px;color:var(--muted)}
+
+.contact{background:linear-gradient(135deg,var(--ink),var(--blue));color:#fff}
 .contact h2{color:#fff}
-.contact .sub{color:#D5E3F0}
-.contact .who{font-family:'Barlow Condensed',sans-serif;font-size:30px;margin:0 0 4px;color:#fff}
-.contact .lines{margin:0 0 24px;color:#D5E3F0}
+.contact .sub{color:#E1EEF9}
+.contact .who{font-family:'Barlow Condensed',sans-serif;font-size:30px;margin:0 0 4px}
+.contact .lines{margin:0 0 24px}
 .contact .lines a{color:#fff}
-footer{background:#06182B;color:#9FB6C9;font-size:14px;padding:20px 0}
+footer{background:#08142B;color:#9FB6C9;font-size:14px;padding:20px 0}
 footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
+img.cover{width:100%;height:210px;object-fit:cover;border-radius:12px;margin-bottom:14px}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cards3 h3{font-size:28px;margin-bottom:8px}
+.cards3 p{margin:0;font-size:16px}
+.partner{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center;margin-top:48px}
+.partner img.photo{border-radius:14px}
+.partner img.pl{width:260px;margin-top:10px}
+.emp{display:grid;grid-template-columns:1fr 1.5fr;gap:44px;align-items:center}
+.circ{display:grid;gap:18px;justify-items:center}
+.circ img{width:min(260px,100%);aspect-ratio:1;object-fit:cover;border-radius:50%;border:8px solid var(--blue)}
+.contact p.t{max-width:46em;color:#E1EEF9;margin:0 0 14px}
+.contact .addr{margin:0 0 24px;color:#E1EEF9}
 @media (max-width:860px){
-.hero .wrap,.two{grid-template-columns:1fr}
-.panel{grid-template-columns:1fr;padding:22px}
-.panel .art{max-width:200px}
-.cols{grid-template-columns:1fr}
-.tabs{grid-template-columns:repeat(5,minmax(0,1fr))}
-.tabs button small{display:none}
-.tabs button{text-align:center}
+.cards3,.partner,.emp{grid-template-columns:1fr}
+.hero .wrap,.two,.prog,.work .grid{grid-template-columns:1fr}
+.why{grid-template-columns:1fr 1fr}
+.flip{direction:ltr}
+section{padding:56px 0}
+.prog{margin-bottom:52px}
 }
+@media (max-width:520px){.why{grid-template-columns:1fr}.kits{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
 
 <header>
 <div class="wrap">
-<a class="brand" href="#top"><img src="data:image/png;base64,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" alt="GVS Technology" width="76" height="56"></a>
+<a class="brand" href="#top"><img src="images/logo.png" alt="GVS Technology" width="85" height="62"></a>
 <nav aria-label="Main">
-<a href="#curriculum">Curriculum</a>
-<a href="#fees">Fees &amp; terms</a>
+<a href="#about">About</a>
+<a href="#programs">Programs</a>
+<a href="#workshop">Workshop</a>
+<a href="#why">Why GVS</a>
 <a href="#contact" class="btn main">Enquire</a>
 </nav>
 </div>
@@ -124,193 +131,178 @@ footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 <div class="hero">
 <div class="wrap">
 <div>
-<h1>Learn to build and fix industrial air-powered machines</h1>
-<p class="lead">A 5-day, 40-hour course in pneumatic and electro-pneumatic control. You start with compressed air and cylinders and finish programming PLCs and commissioning systems in simulation software.</p>
+<h1>Your pathway to success in Mechatronics, Data Science and Electric Vehicles</h1>
+<p>GVS Technology leads the way in advanced tech education, bringing industry and academia together through hands-on training.</p>
 <div class="cta">
-<a class="btn main" href="#contact">Enquire about the next batch</a>
-<a class="btn ghost" href="#curriculum">See the 5-day curriculum</a>
+<a class="btn main" href="#contact">Enquire now</a>
+<a class="btn ghost" href="#programs">Explore programs</a>
 </div>
-<ul class="facts">
-<li><b>5 days</b>8 hours each</li>
-<li><b>40 hours</b>theory and hands-on</li>
-<li><b>₹9,000</b>per participant</li>
+</div>
+<div class="shot">
+<img src="images/mms-station.png" alt="Modular mechatronics training station with robotic arm and conveyor modules" width="900" height="435">
+<span>Hands-on learning on real industrial training stations</span>
+</div>
+</div>
+</div>
+
+<section id="about">
+<div class="wrap two">
+<div>
+<h2>About GVS Technology</h2>
+<h3>Leading the way in advanced tech education</h3>
+<p>We are dedicated to empowering the next generation of innovators, engineers, and tech enthusiasts with industry-relevant skills and knowledge. We specialise in advanced training in Mechatronics (Robotics and Automation Technologies), Data Science (Artificial Intelligence and Machine Learning), and Electric Vehicles.</p>
+<p>Our mission is to bridge the gap between academia and the rapidly evolving technological landscape by providing hands-on training and practical insights that equip our students to excel in their careers.</p>
+</div>
+<div>
+<h3>Our vision</h3>
+<p>Our vision is to become a leading centre of excellence in advanced technology education. We aim to inspire and nurture future leaders who will drive innovation and shape the world with groundbreaking solutions in Mechatronics, Data Science (AI and ML), and Electric Vehicles.</p>
+<p>We believe that learning is a lifelong journey, and our goal is to provide a dynamic and supportive environment where curiosity is encouraged and creativity is unleashed. We focus on practical learning to equip students with the skills needed for real-world jobs. To support this, we provide placement and internship opportunities, ensuring students gain hands-on experience and a smooth transition into their careers.</p>
+</div>
+</div>
+<div class="wrap partner">
+<img class="photo" src="images/about-us.jpg" alt="Keyboard keys with the words About Us" width="900" height="600" loading="lazy">
+<div>
+<p><b>GVS Technology is an Authorised Associate Partner with Janatics India Pvt Ltd</b>, and our Dealers, Channel Partners, and Distributors are from this trusted network, ensuring you receive the best support and resources.</p>
+<img class="pl" src="images/janatics.png" alt="Janatics logo" width="260" height="33" loading="lazy">
+</div>
+</div>
+</section>
+
+<section id="explore">
+<div class="wrap">
+<h2>Explore the future of technologies</h2>
+<p class="sub">Mechatronics, Data Science (AI, ML) and Electric Vehicles.</p>
+<div class="cards3">
+<div><img class="cover" src="images/robot.jpg" alt="Humanoid robot connected to a network of icons" loading="lazy"><h3>Mechatronics (Robotics and Automation)</h3><p>Dive into the world of automation and robotics with our comprehensive Mechatronics training. Learn to design, build, and program automated systems that are revolutionising industries worldwide. Our curriculum covers everything from fundamental principles to advanced applications, ensuring that our students are well-prepared for the future of work.</p></div>
+<div><img class="cover" src="images/data-science.jpg" alt="Hand holding a glowing data science graphic" loading="lazy"><h3>Data Science (AI and ML)</h3><p>Unlock the potential of data with our Data Science training that delves into Artificial Intelligence and Machine Learning. Gain expertise in data analytics, predictive modelling and AI algorithms that are transforming how businesses operate. Whether you are new to the field or looking to advance your skills, our training is designed to help you achieve your goals.</p></div>
+<div><img class="cover" src="images/ev-systems.jpg" alt="Electric vehicle systems diagram" loading="lazy"><h3>Electric Vehicles</h3><p>Step into the future of transportation with our Electric Vehicles training. Learn about the latest advancements in EV technologies, from battery systems to vehicle dynamics, and become a part of the global shift toward sustainable mobility. Our practical approach ensures that you gain not only theoretical knowledge but also hands-on experience with cutting-edge EV technologies.</p></div>
+</div>
+</div>
+</section>
+
+<section id="programs" class="alt">
+<div class="wrap">
+<h2>Explore the future of technologies</h2>
+<p class="sub">Three focus areas, each designed to give you theoretical knowledge and hands-on experience, whether you are new to the field or looking to advance your skills.</p>
+
+<div class="prog">
+<div>
+<h3>Mechatronics</h3>
+<p class="tag">Robotics and Automation Technologies</p>
+<p>Step into the future of automation with comprehensive training built around a robust understanding of how mechanical, electronic, and computer systems work together. Learn to design, build, and program automated systems, from fundamental principles to advanced applications, whether you are aiming at industrial automation, robotics, or smart manufacturing.</p>
+<ul class="models">
+<li>Industrial basic and advanced pneumatics</li>
+<li>Advanced electro-pneumatics</li>
+<li>Introduction to PLC</li>
+<li>PLC integration with electro-pneumatics</li>
+<li>Industrial basic and advanced hydraulics</li>
+<li>Advanced electro-hydraulics</li>
+<li>Introduction to MMS Station Industry 4.0</li>
 </ul>
 </div>
-<svg class="rig" viewBox="0 0 560 330" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Animated diagram of a pneumatic cylinder: compressed air flows in and the piston rod extends and retracts">
-<rect x="40" y="110" width="260" height="90" rx="6" stroke="#9FD3F5" stroke-width="4"/>
-<path d="M300 155H320" stroke="#9FD3F5" stroke-width="4"/>
-<path d="M90 110V50H20M250 200v70h60" stroke="#fff" stroke-width="3"/>
-<path class="flow" d="M20 50H90V108M310 270H250V202" stroke="#9FD3F5" stroke-width="3"/>
-<circle cx="20" cy="50" r="6" fill="#fff"/><circle cx="310" cy="270" r="6" fill="#fff"/>
-<text x="30" y="34" fill="#D5E3F0" font-size="14" font-family="Barlow,Arial,sans-serif">Supply air</text>
-<text x="190" y="298" fill="#D5E3F0" font-size="14" font-family="Barlow,Arial,sans-serif">Exhaust air</text>
-<g class="rod">
-<rect x="70" y="118" width="14" height="74" fill="#0B5C9E" stroke="#9FD3F5" stroke-width="3"/>
-<line x1="84" y1="155" x2="400" y2="155" stroke="#fff" stroke-width="10"/>
-<rect x="394" y="130" width="22" height="50" rx="4" fill="#C2410C" stroke="#fff" stroke-width="3"/>
-</g>
-<text x="150" y="94" fill="#D5E3F0" font-size="14" font-family="Barlow,Arial,sans-serif">Cylinder</text>
-<text x="400" y="118" fill="#D5E3F0" font-size="14" font-family="Barlow,Arial,sans-serif">Piston rod</text>
-</svg>
+<div class="kits">
+<figure><img src="images/pneumatic-kit.jpg" alt="Pneumatic training kit workstation" width="700" height="896" loading="lazy"><figcaption>Pneumatic training kit</figcaption></figure>
+<figure><img src="images/hydraulic-kit.jpg" alt="Hydraulics training kit workstation with power pack" width="700" height="909" loading="lazy"><figcaption>Hydraulics training kit</figcaption></figure>
 </div>
 </div>
 
-<section id="curriculum">
-<div class="wrap">
-<h2>What you learn, day by day</h2>
-<p class="sub">Each day has a morning and an afternoon session. Pick a day to see its topics and what you will be able to do at the end of it.</p>
-
-<div class="tabs" role="tablist" aria-label="Course days">
-<button role="tab" id="t1" aria-controls="p1" aria-selected="true"><span>Day 1</span><small>Pneumatic control</small></button>
-<button role="tab" id="t2" aria-controls="p2" aria-selected="false"><span>Day 2</span><small>Advanced pneumatics</small></button>
-<button role="tab" id="t3" aria-controls="p3" aria-selected="false"><span>Day 3</span><small>Electro-pneumatics</small></button>
-<button role="tab" id="t4" aria-controls="p4" aria-selected="false"><span>Day 4</span><small>PLC automation</small></button>
-<button role="tab" id="t5" aria-controls="p5" aria-selected="false"><span>Day 5</span><small>Simulation and review</small></button>
-</div>
-
-<div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
-<div class="art"><svg viewBox="0 0 100 70" fill="none" stroke="#0B5C9E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="22" width="52" height="26" rx="3"/><line x1="34" y1="22" x2="34" y2="48"/><line x1="34" y1="35" x2="92" y2="35" stroke-width="5"/><path d="M18 22V8M48 48v14"/></svg></div>
+<div class="prog flip">
 <div>
-<h3>Industrial Pneumatic Control</h3><p class="hrs">8 hours</p>
-<div class="cols">
-<div><h4>Morning session</h4><ul>
-<li><b>Fundamentals of compressed air supply:</b> production, preparation, and distribution.</li>
-<li><b>Symbolic representation:</b> ISO 1219 standards for device symbols.</li>
-<li><b>Actuators:</b> cylinder construction, operation, and applications.</li></ul></div>
-<div><h4>Afternoon session</h4><ul>
-<li><b>Valves:</b> identification, construction, and operation of direction control valves and other control elements.</li>
-<li><b>Control techniques:</b> position control (limit switches and sensors), speed control (flow control valves), logic control (AND/OR valves), pressure control (adjustable pressure sequence valve), and time-dependent control (timers and counters).</li></ul></div>
+<h3>Data Science</h3>
+<p class="tag">Artificial Intelligence and Machine Learning</p>
+<p>Unlock the potential of data. Our curriculum covers data analytics, predictive modelling, deep learning, and more. It is designed for aspiring data scientists and professionals who want to strengthen their AI and ML skills and use them to make data-driven decisions and innovate in their field.</p>
+<ul class="models">
+<li>Python programming</li>
+<li>Data analysis and visualization</li>
+<li>Web scraping</li>
+<li>Machine learning</li>
+<li>Deep learning</li>
+<li>Image processing and computer vision</li>
+<li>Natural language processing</li>
+</ul>
 </div>
-<p class="out"><b>Outcomes:</b> select the correct components, read and design basic pneumatic circuits, and troubleshoot pneumatic systems.</p>
-</div></div>
+<img src="images/analytics.jpg" alt="Person analysing data on a laptop with glowing charts" width="900" height="559" loading="lazy">
+</div>
 
-<div class="panel" role="tabpanel" id="p2" aria-labelledby="t2">
-<div class="art"><svg viewBox="0 0 100 70" fill="none" stroke="#0B5C9E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 60h20V34h20V10h20v24h20v26h8"/><path d="M6 66h90" stroke-dasharray="3 4" stroke-width="1.2"/></svg></div>
+<div class="prog">
 <div>
-<h3>Advanced Industrial Pneumatic Control</h3><p class="hrs">8 hours</p>
-<div class="cols">
-<div><h4>Morning session</h4><ul>
-<li><b>Sequential multi-cylinder control:</b> basics of sequential control and signal overlap.</li>
-<li><b>Motion and control diagrams:</b> techniques for plotting and identifying signal overlap.</li></ul></div>
-<div><h4>Afternoon session</h4><ul>
-<li><b>Cascade principle:</b> sequential multi-cylinder cascade control by grouping methods.</li>
-<li><b>Stepper sequencer principle:</b> advanced sequential control using expansion modules.</li>
-<li><b>Vacuum generation:</b> vacuum systems and their accessories for control applications.</li></ul></div>
+<h3>Electric Vehicles</h3>
+<p class="tag">EV design, batteries and charging</p>
+<p>Drive the future of mobility. Our programs cover everything from EV design and battery technologies to charging infrastructure and vehicle integration. Learn about the latest advancements, from battery systems to vehicle dynamics, and join the global shift toward sustainable mobility with a practical, hands-on approach.</p>
 </div>
-<p class="out"><b>Outcomes:</b> awareness of advanced pneumatics, ability to develop and troubleshoot multi-cylinder circuits, and application of vacuum in control systems.</p>
-</div></div>
-
-<div class="panel" role="tabpanel" id="p3" aria-labelledby="t3">
-<div class="art"><svg viewBox="0 0 100 70" fill="none" stroke="#0B5C9E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="22" y="18" width="28" height="28"/><rect x="50" y="18" width="28" height="28"/><path d="M22 18l6 6M50 18l6 6M8 32h14M78 32h14M36 46v14M64 46v14"/><path d="M4 8l6 4 6-4 6 4 6-4 6 4" stroke-width="1.5"/></svg></div>
-<div>
-<h3>Industrial Electro-Pneumatic Control</h3><p class="hrs">8 hours</p>
-<div class="cols">
-<div><h4>Morning session</h4><ul>
-<li><b>Fundamentals of electro-pneumatic control:</b> control chain and electric symbols (contacts, switches, relays, timers, and counters).</li>
-<li><b>Solenoid-operated valves:</b> construction, working principles, and applications.</li></ul></div>
-<div><h4>Afternoon session</h4><ul>
-<li><b>Sensors:</b> magnetic, inductive, capacitive, optical, and pressure sensors and their applications.</li>
-<li><b>Graphical symbols interpretation:</b> symbols in electrical circuits and on electro-pneumatic components.</li></ul></div>
+<img src="images/ev-systems.jpg" alt="Diagram of electric vehicle systems: motor, battery management, charging and regenerative braking" width="745" height="302" loading="lazy">
 </div>
-<p class="out"><b>Outcomes:</b> design, assemble, and troubleshoot basic electro-pneumatic circuits, maintain control systems, and read electrical control circuits.</p>
-</div></div>
-
-<div class="panel" role="tabpanel" id="p4" aria-labelledby="t4">
-<div class="art"><svg viewBox="0 0 100 70" fill="none" stroke="#0B5C9E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="22" y="8" width="56" height="54" rx="4"/><rect x="30" y="42" width="22" height="10"/><circle cx="62" cy="47" r="3" fill="#0B5C9E"/><path d="M30 34h40M30 26h40M30 18h40M8 22h14M8 40h14M78 22h14M78 40h14" stroke-width="1.5"/></svg></div>
-<div>
-<h3>Electro-Pneumatic Automation with PLC</h3><p class="hrs">8 hours</p>
-<div class="cols">
-<div><h4>Morning session</h4><ul>
-<li><b>PLC fundamentals:</b> PLC architecture, programming environments, and control chain in electro-pneumatic systems.</li>
-<li><b>Sensor integration:</b> connecting sensors to PLCs based on specifications.</li></ul></div>
-<div><h4>Afternoon session</h4><ul>
-<li><b>PLC programming:</b> developing PLC logic control using electro-pneumatic elements.</li>
-<li><b>Commissioning:</b> communicating with and commissioning PLC systems from a PC.</li></ul></div>
-</div>
-<p class="out"><b>Outcomes:</b> use electro-pneumatics, sensors, and PLCs in control systems, develop and troubleshoot PLC-controlled electro-pneumatic systems, and automate controls with PLC programming.</p>
-</div></div>
-
-<div class="panel" role="tabpanel" id="p5" aria-labelledby="t5">
-<div class="art"><svg viewBox="0 0 100 70" fill="none" stroke="#0B5C9E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="6" width="80" height="48" rx="4"/><path d="M34 64h32M50 54v10"/><path d="M20 42l16-18 12 11 22-22" stroke-width="3"/></svg></div>
-<div>
-<h3>Simulation Software and Review</h3><p class="hrs">8 hours</p>
-<div class="cols">
-<div><h4>Morning session</h4><ul>
-<li><b>Industrial simulation software:</b> basics of simulation software for designing and testing automated systems.</li>
-<li><b>Virtual commissioning:</b> hands-on exercises in using simulation software to commission and optimize mechatronic systems.</li></ul></div>
-<div><h4>Afternoon session</h4><ul>
-<li><b>Case studies and review:</b> analysis of real-world applications and a Q&amp;A session to consolidate learning.</li></ul></div>
-</div>
-<p class="out"><b>Outcomes:</b> simulate, design, and troubleshoot automated systems in a virtual environment.</p>
-</div></div>
-
-<p class="benefit">Participants gain extensive knowledge and practical skills in pneumatic and electro-pneumatic systems, advanced pneumatics, PLC integration, and industrial simulation software. The mix of theory and hands-on practice prepares learners for real-world challenges in automation and control systems.</p>
 </div>
 </section>
 
-<section class="fees" id="fees">
-<div class="wrap">
-<h2>Fees and enrollment terms</h2>
-<p class="sub">One fee covers all five days. Please read the payment and cancellation terms before you register.</p>
-<div class="two">
-<div class="price">
+<section id="empower">
+<div class="wrap emp">
+<div class="circ">
+<img src="images/ai.jpg" alt="Glowing AI hologram above an open hand" loading="lazy">
+<img src="images/robot.jpg" alt="Humanoid robot thinking" loading="lazy">
+</div>
+<div>
+<h2>Empowering futures with advanced technological education</h2>
+<p>At GVS Technology, we are committed to empowering individuals and businesses with cutting-edge education and training in Mechatronics (Robotics and Automation Technologies), Data Science (AI and ML), and Electric Vehicles (EV). Our industry-relevant programs equip you with the skills needed to excel in the rapidly evolving tech landscape. We provide hands-on experience in advanced robotics, AI, ML, and EV technologies, with strong support for internships and placements to ensure our students gain valuable real-world experience and career opportunities.</p>
+<p>We focus on practical learning to equip students with the skills needed for real-world jobs. Additionally, we provide placement and internship opportunities, ensuring students gain hands-on experience and a smooth transition into their careers.</p>
+<h3 style="font-size:32px;margin:24px 0 8px">Pioneering technological education for a brighter tomorrow</h3>
+<p>We offer cutting-edge training in the most innovative fields of technology. Based in Bangalore, our specialised programs cover Mechatronics (Robotics and Automation Technologies), Data Science (AI and ML), and Electric Vehicles (EV). Each training is meticulously designed to provide you with the expertise and hands-on experience required to excel in these fast-evolving domains. Whether you are looking to advance your career or start a new one, our training equips you with the knowledge and skills to thrive in the future of technology.</p>
+</div>
+</div>
+</section>
+
+<section id="workshop" class="work">
+<div class="wrap grid">
+<div>
+<h2>Featured workshop: Pneumatic and Electro-Pneumatic Control</h2>
+<p class="sub">An intensive 5-day, 40-hour program covering foundational and advanced concepts in industrial automation, including PLC integration.</p>
+<ol>
+<li>Industrial pneumatic control</li>
+<li>Advanced industrial pneumatic control</li>
+<li>Industrial electro-pneumatic control</li>
+<li>Electro-pneumatic automation with PLC</li>
+<li>Simulation software and review</li>
+</ol>
+</div>
+<div class="fee">
 <div class="big">₹9,000 /-</div>
-<p>Training fee per participant</p>
-<h3>Included</h3>
-<ul><li>Comprehensive training sessions</li><li>Course materials</li></ul>
-<h3>Not included</h3>
-<ul><li>Additional software or equipment costs</li></ul>
-</div>
-<div class="terms">
-<h3>Payment terms</h3>
-<p style="margin:0 0 20px">Pay 50% in advance to confirm your registration. Pay the balance before training begins.</p>
-<h3>Cancellation policy</h3>
-<table>
-<thead><tr><th scope="col">When you cancel</th><th scope="col">Cancellation fee</th></tr></thead>
-<tbody>
-<tr><td>7 days before the start date</td><td>10%</td></tr>
-<tr><td>3 days before the start date</td><td>20%</td></tr>
-<tr><td>Last minute, or no-show</td><td>No refund</td></tr>
-</tbody></table>
-</div>
+<p>Training fee per participant. Course materials included.</p>
+<a class="btn main" href="pneumatic-training.html">View full curriculum and terms</a>
 </div>
 </div>
 </section>
 
-<section class="contact" id="contact">
+<section id="why">
 <div class="wrap">
-<h2>Book your seat</h2>
-<p class="sub">Call, message or email to ask about the next batch dates and to confirm your registration.</p>
-<p class="who">Mr Sameer</p>
-<p class="lines"><a href="tel:+919916768853">9916768853</a><br><a href="mailto:sameerkhangv@gmail.com">sameerkhangv@gmail.com</a></p>
+<h2>Why choose GVS Technology?</h2>
+<p class="sub">At GVS Technology, we pride ourselves on delivering high-quality education that is tailored to meet the demands of the modern tech landscape. Our experienced instructors, state-of-the-art facilities, and industry collaborations provide a unique learning experience that is both engaging and impactful. Whether you are a student aiming to kickstart your career or a professional looking to upskill, GVS Technology offers a pathway to success. Additionally, GVS Technology is an Authorised Associate Partner with Janatics India Pvt Ltd., and our Dealers, Channel Partners, and Distributors are from this trusted network, ensuring you receive the best support and resources.</p>
+<div class="why">
+<div><h3>Experienced instructors</h3><p>Learn from trainers who work with the technology you are studying.</p></div>
+<div><h3>State-of-the-art facilities</h3><p>Practice on real training stations and kits, not only slides.</p></div>
+<div><h3>Industry collaboration</h3><p>Programs shaped around what industry expects from new engineers.</p></div>
+<div><h3>Placement and internships</h3><p>Support for internships and placements, so training leads to careers.</p></div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="wrap">
+<h2>Start your journey to success in tech</h2>
+<p class="t">Are you ready to transform your future with the skills that matter? Join GVS Technology and be a part of the technological revolution. With our commitment to excellence, we provide the knowledge, tools, and support you need to excel in the fields of Mechatronics, Data Science (AI, ML) and Electric Vehicles. Start your journey with GVS Technology and unlock endless possibilities.</p>
+<h3 style="color:#fff;font-size:30px;margin:22px 0 8px">Get started with GVS Technology today</h3>
+<p class="t">Ready to take the next step in your career? We are committed to your success and growth in the tech industry. Whether you are looking to enhance your skills or start a new career path, our training is designed to help you achieve your goals. Contact us today to learn more about our programs and how we can help you on your journey. Let GVS Technology be your partner in building a brighter, more technologically advanced future. Your future in tech starts here!</p>
+<p class="who" style="margin-top:22px">Mr Sameer</p>
+<p class="lines"><a href="tel:+919916768853">9916768853</a> &nbsp;·&nbsp; <a href="tel:+919480967253">+91 9480967253</a><br><a href="mailto:sameerkhangv@gmail.com">sameerkhangv@gmail.com</a></p>
+<p class="addr">#3, 2nd Cross, Tuba Layout, Near Manyata Techpark, Nagavara Main Road, Bengaluru - 77</p>
 <div class="cta">
 <a class="btn main" href="tel:+919916768853">Call 9916768853</a>
-<a class="btn ghost" href="https://wa.me/919916768853?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20the%20Pneumatic%20and%20Electro-Pneumatic%20Control%20training." target="_blank" rel="noopener">Message on WhatsApp</a>
-<a class="btn ghost" href="mailto:sameerkhangv@gmail.com?subject=Enquiry%3A%20Pneumatic%20and%20Electro-Pneumatic%20Training">Send an email</a>
+<a class="btn ghost" href="https://wa.me/919916768853?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20GVS%20Technology%20training%20programs." target="_blank" rel="noopener">Message on WhatsApp</a>
+<a class="btn ghost" href="mailto:sameerkhangv@gmail.com?subject=Enquiry%3A%20GVS%20Technology%20training">Send an email</a>
 </div>
 </div>
 </section>
 </main>
 
-<footer><div class="wrap"><span>© GVS Technology. All rights reserved.</span><span>Industrial Pneumatic and Electro-Pneumatic Control Training Program</span></div></footer>
-
-<script>
-(function(){
-var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
-var panels=tabs.map(function(t){return document.getElementById(t.getAttribute('aria-controls'));});
-function show(i,focus){
-tabs.forEach(function(t,j){t.setAttribute('aria-selected',j===i);t.tabIndex=j===i?0:-1;panels[j].hidden=j!==i;});
-if(focus)tabs[i].focus();
-}
-tabs.forEach(function(t,i){
-t.addEventListener('click',function(){show(i)});
-t.addEventListener('keydown',function(e){
-if(e.key==='ArrowRight')show((i+1)%tabs.length,true);
-if(e.key==='ArrowLeft')show((i+tabs.length-1)%tabs.length,true);
-});
-});
-show(0);
-})();
-</script>
+<footer><div class="wrap"><span>© GVS Technology. All rights reserved.</span><span>Mechatronics | Electric Vehicles | Data Science</span></div></footer>
 </body>
 </html>
