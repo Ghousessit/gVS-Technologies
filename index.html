@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pneumatic &amp; Electro-Pneumatic Control Training | EOS Technologies</title>
+<meta name="description" content="5-day, 40-hour training in industrial pneumatics, electro-pneumatics, PLC integration and simulation software. ₹9,000 per participant.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230A2540'/%3E%3Crect x='5' y='11' width='14' height='10' fill='none' stroke='%239FD3F5' stroke-width='2'/%3E%3Cpath d='M19 16h9' stroke='%239FD3F5' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0A2540;--blue:#0B5C9E;--sky:#9FD3F5;--paper:#F6FAFD;--line:#D5E3F0;--accent:#C2410C;--muted:#4A5B6B;--text:#1B2B3A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Barlow,system-ui,Arial,sans-serif;font-size:17px;line-height:1.6;color:var(--text);background:var(--paper)}
+h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;line-height:1.05;margin:0;color:var(--ink);font-weight:700}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.btn{display:inline-block;padding:13px 22px;border-radius:4px;font-weight:600;text-decoration:none;font-size:16px;border:2px solid transparent}
+.btn.main{background:var(--accent);color:#fff}
+.btn.main:hover{background:#9A3412}
+.btn.ghost{border-color:var(--sky);color:#fff}
+.btn.ghost:hover{background:rgba(159,211,245,.15)}
+.btn.dark{border-color:var(--ink);color:var(--ink)}
+.btn.dark:hover{background:var(--ink);color:#fff}
+
+header{background:var(--ink);color:#fff}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:16px;padding-bottom:16px;flex-wrap:wrap}
+.brand{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:28px;letter-spacing:.04em;color:#fff;text-decoration:none}
+.brand small{font-family:Barlow,sans-serif;font-weight:500;font-size:11px;letter-spacing:.35em;color:var(--sky);margin-left:8px}
+nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+nav a{color:#D5E3F0;text-decoration:none;font-weight:500}
+nav a:hover{color:#fff}
+nav .btn{padding:9px 16px;color:#fff}
+
+.hero{background:var(--ink);color:#fff;padding:32px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+.hero h1{color:#fff;font-size:clamp(44px,7vw,84px);letter-spacing:-.005em}
+.hero p.lead{font-size:19px;color:#D5E3F0;max-width:34em;margin:20px 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.facts{display:flex;gap:28px;margin:34px 0 0;padding:0;list-style:none;flex-wrap:wrap}
+.facts li{font-size:15px;color:#D5E3F0;border-top:2px solid var(--sky);padding-top:8px}
+.facts b{display:block;font-family:'Barlow Condensed',sans-serif;font-size:30px;color:#fff;line-height:1.1}
+.rig{width:100%;height:auto}
+.rig .rod{animation:stroke 4.5s ease-in-out infinite alternate}
+.rig .flow{stroke-dasharray:6 8;animation:flow 1.2s linear infinite}
+@keyframes stroke{from{transform:translateX(0)}to{transform:translateX(110px)}}
+@keyframes flow{to{stroke-dashoffset:-14}}
+@media (prefers-reduced-motion:reduce){.rig .rod,.rig .flow{animation:none}.rig .rod{transform:translateX(55px)}}
+
+section{padding:72px 0}
+section h2{font-size:clamp(34px,5vw,52px);margin-bottom:12px}
+.sub{max-width:40em;color:var(--muted);margin:0 0 32px}
+
+.tabs{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:2px solid var(--ink);border-radius:6px;overflow:hidden;margin-bottom:0}
+.tabs button{font:inherit;font-weight:600;padding:14px 8px;background:#fff;color:var(--ink);border:0;border-right:1px solid var(--line);cursor:pointer;text-align:left}
+.tabs button:last-child{border-right:0}
+.tabs button span{display:block;font-family:'Barlow Condensed',sans-serif;font-size:26px;line-height:1}
+.tabs button small{display:block;font-weight:500;font-size:13px;color:var(--muted);line-height:1.25;margin-top:4px}
+.tabs button[aria-selected=true]{background:var(--ink);color:#fff}
+.tabs button[aria-selected=true] small{color:var(--sky)}
+.panel{background:#fff;border:2px solid var(--ink);border-top:0;border-radius:0 0 6px 6px;padding:32px;display:grid;grid-template-columns:200px 1fr;gap:32px;margin-bottom:24px}
+.panel[hidden]{display:none}
+.panel .art{background:var(--paper);border-radius:6px;padding:16px;align-self:start}
+.panel h3{font-size:34px;margin-bottom:2px}
+.panel .hrs{color:var(--muted);font-size:15px;margin:0 0 16px}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.cols h4{margin:0 0 8px;font-size:18px;color:var(--blue)}
+.panel ul{margin:0;padding-left:20px}
+.panel li{margin-bottom:8px;font-size:16px}
+.out{margin-top:20px;padding:14px 16px;background:var(--paper);border-left:4px solid var(--accent);font-size:16px}
+
+.fees{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.two{display:grid;grid-template-columns:1fr 1.2fr;gap:24px}
+.price{background:var(--ink);color:#fff;padding:36px;border-radius:6px}
+.price .big{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:72px;line-height:1;color:#fff}
+.price p{color:#D5E3F0;margin:8px 0 20px}
+.price h3{color:#fff;font-size:22px;margin-top:18px}
+.price ul{margin:6px 0 0;padding-left:20px;color:#D5E3F0}
+.terms{border:2px solid var(--line);padding:36px;border-radius:6px}
+.terms h3{font-size:24px;margin:0 0 6px}
+.terms table{width:100%;border-collapse:collapse;margin:8px 0 22px}
+.terms th,.terms td{text-align:left;padding:10px 0;border-bottom:1px solid var(--line);font-size:16px}
+.terms th{font-weight:600;color:var(--ink)}
+.benefit{max-width:44em;font-size:21px;line-height:1.55;color:var(--ink)}
+
+.contact{background:var(--ink);color:#fff}
+.contact h2{color:#fff}
+.contact .sub{color:#D5E3F0}
+.contact .who{font-family:'Barlow Condensed',sans-serif;font-size:30px;margin:0 0 4px;color:#fff}
+.contact .lines{margin:0 0 24px;color:#D5E3F0}
+.contact .lines a{color:#fff}
+footer{background:#06182B;color:#9FB6C9;font-size:14px;padding:20px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+@media (max-width:860px){
+.hero .wrap,.two{grid-template-columns:1fr}
+.panel{grid-template-columns:1fr;padding:22px}
+.panel .art{max-width:200px}
+.cols{grid-template-columns:1fr}
+.tabs{grid-template-columns:repeat(5,minmax(0,1fr))}
+.tabs button small{display:none}
+.tabs button{text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+<div class="wrap">
+<a class="brand" href="#top">EOS<small>TECHNOLOGIES</small></a>
+<nav aria-label="Main">
+<a href="#curriculum">Curriculum</a>
+<a href="#fees">Fees &amp; terms</a>
+<a href="#contact" class="btn ghost">Enquire</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+<div class="hero">
+<div class="wrap">
+<div>
+<h1>Learn to build and fix industrial air-powered machines</h1>
+<p class="lead">A 5-day, 40-hour course in pneumatic and electro-pneumatic control. You start with compressed air and cylinders and finish programming PLCs and commissioning systems in simulation software.</p>
+<div class="cta">
+<a class="btn main" href="#contact">Enquire about the next batch</a>
+<a class="btn ghost" href="#curriculum">See the 5-day curriculum</a>
+</div>
+<ul class="facts">
+<li><b>5 days</b>8 hours each</li>
+<li><b>40 hours</b>theory and hands-on</li>
+<li><b>₹9,000</b>per participant</li>
+</ul>
+</div>
+<svg class="rig" viewBox="0 0 560 330" fill="none" stroke-linecap="round" stroke-linejoin="round" role="img" aria-label="Animated diagram of a pneumatic cylinder: compressed air flows in and the piston rod extends and retracts">
+<rect x="40" y="110" width="260" height="90" rx="6" stroke="#9FD3F5" stroke-width="4"/>
+<path d="M300 155H320" stroke="#9FD3F5" stroke-width="4"/>
+<path d="M90 110V50H20M250 200v70h60" stroke="#fff" stroke-width="3"/>
+<path class="flow" d="M20 50H90V108M310 270H250V202" stroke="#9FD3F5" stroke-width="3"/>
+<circle cx="20" cy="50" r="6" fill="#fff"/><circle cx="310" cy="270" r="6" fill="#fff"/>
+<text x="30" y="34" fill="#D5E3F0" font-size="14" font-family="Barlow,Arial,sans-serif">Supply air</text>
+<text x="190" y="298" fill="#D5E3F0" font-size="14" font-family="Barlow,Arial,sans-serif">Exhaust air</text>
+<g class="rod">
+<rect x="70" y="118" width="14" height="74" fill="#0B5C9E" stroke="#9FD3F5" stroke-width="3"/>
+<line x1="84" y1="155" x2="400" y2="155" stroke="#fff" stroke-width="10"/>
+<rect x="394" y="130" width="22" height="50" rx="4" fill="#C2410C" stroke="#fff" stroke-width="3"/>
+</g>
+<text x="150" y="94" fill="#D5E3F0" font-size="14" font-family="Barlow,Arial,sans-serif">Cylinder</text>
+<text x="400" y="118" fill="#D5E3F0" font-size="14" font-family="Barlow,Arial,sans-serif">Piston rod</text>
+</svg>
+</div>
+</div>
+
+<section id="curriculum">
+<div class="wrap">
+<h2>What you learn, day by day</h2>
+<p class="sub">Each day has a morning and an afternoon session. Pick a day to see its topics and what you will be able to do at the end of it.</p>
+
+<div class="tabs" role="tablist" aria-label="Course days">
+<button role="tab" id="t1" aria-controls="p1" aria-selected="true"><span>Day 1</span><small>Pneumatic control</small></button>
+<button role="tab" id="t2" aria-controls="p2" aria-selected="false"><span>Day 2</span><small>Advanced pneumatics</small></button>
+<button role="tab" id="t3" aria-controls="p3" aria-selected="false"><span>Day 3</span><small>Electro-pneumatics</small></button>
+<button role="tab" id="t4" aria-controls="p4" aria-selected="false"><span>Day 4</span><small>PLC automation</small></button>
+<button role="tab" id="t5" aria-controls="p5" aria-selected="false"><span>Day 5</span><small>Simulation and review</small></button>
+</div>
+
+<div class="panel" role="tabpanel" id="p1" aria-labelledby="t1">
+<div class="art"><svg viewBox="0 0 100 70" fill="none" stroke="#0B5C9E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="22" width="52" height="26" rx="3"/><line x1="34" y1="22" x2="34" y2="48"/><line x1="34" y1="35" x2="92" y2="35" stroke-width="5"/><path d="M18 22V8M48 48v14"/></svg></div>
+<div>
+<h3>Industrial Pneumatic Control</h3><p class="hrs">8 hours</p>
+<div class="cols">
+<div><h4>Morning session</h4><ul>
+<li><b>Fundamentals of compressed air supply:</b> production, preparation, and distribution.</li>
+<li><b>Symbolic representation:</b> ISO 1219 standards for device symbols.</li>
+<li><b>Actuators:</b> cylinder construction, operation, and applications.</li></ul></div>
+<div><h4>Afternoon session</h4><ul>
+<li><b>Valves:</b> identification, construction, and operation of direction control valves and other control elements.</li>
+<li><b>Control techniques:</b> position control (limit switches and sensors), speed control (flow control valves), logic control (AND/OR valves), pressure control (adjustable pressure sequence valve), and time-dependent control (timers and counters).</li></ul></div>
+</div>
+<p class="out"><b>Outcomes:</b> select the correct components, read and design basic pneumatic circuits, and troubleshoot pneumatic systems.</p>
+</div></div>
+
+<div class="panel" role="tabpanel" id="p2" aria-labelledby="t2">
+<div class="art"><svg viewBox="0 0 100 70" fill="none" stroke="#0B5C9E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 60h20V34h20V10h20v24h20v26h8"/><path d="M6 66h90" stroke-dasharray="3 4" stroke-width="1.2"/></svg></div>
+<div>
+<h3>Advanced Industrial Pneumatic Control</h3><p class="hrs">8 hours</p>
+<div class="cols">
+<div><h4>Morning session</h4><ul>
+<li><b>Sequential multi-cylinder control:</b> basics of sequential control and signal overlap.</li>
+<li><b>Motion and control diagrams:</b> techniques for plotting and identifying signal overlap.</li></ul></div>
+<div><h4>Afternoon session</h4><ul>
+<li><b>Cascade principle:</b> sequential multi-cylinder cascade control by grouping methods.</li>
+<li><b>Stepper sequencer principle:</b> advanced sequential control using expansion modules.</li>
+<li><b>Vacuum generation:</b> vacuum systems and their accessories for control applications.</li></ul></div>
+</div>
+<p class="out"><b>Outcomes:</b> awareness of advanced pneumatics, ability to develop and troubleshoot multi-cylinder circuits, and application of vacuum in control systems.</p>
+</div></div>
+
+<div class="panel" role="tabpanel" id="p3" aria-labelledby="t3">
+<div class="art"><svg viewBox="0 0 100 70" fill="none" stroke="#0B5C9E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="22" y="18" width="28" height="28"/><rect x="50" y="18" width="28" height="28"/><path d="M22 18l6 6M50 18l6 6M8 32h14M78 32h14M36 46v14M64 46v14"/><path d="M4 8l6 4 6-4 6 4 6-4 6 4" stroke-width="1.5"/></svg></div>
+<div>
+<h3>Industrial Electro-Pneumatic Control</h3><p class="hrs">8 hours</p>
+<div class="cols">
+<div><h4>Morning session</h4><ul>
+<li><b>Fundamentals of electro-pneumatic control:</b> control chain and electric symbols (contacts, switches, relays, timers, and counters).</li>
+<li><b>Solenoid-operated valves:</b> construction, working principles, and applications.</li></ul></div>
+<div><h4>Afternoon session</h4><ul>
+<li><b>Sensors:</b> magnetic, inductive, capacitive, optical, and pressure sensors and their applications.</li>
+<li><b>Graphical symbols interpretation:</b> symbols in electrical circuits and on electro-pneumatic components.</li></ul></div>
+</div>
+<p class="out"><b>Outcomes:</b> design, assemble, and troubleshoot basic electro-pneumatic circuits, maintain control systems, and read electrical control circuits.</p>
+</div></div>
+
+<div class="panel" role="tabpanel" id="p4" aria-labelledby="t4">
+<div class="art"><svg viewBox="0 0 100 70" fill="none" stroke="#0B5C9E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="22" y="8" width="56" height="54" rx="4"/><rect x="30" y="42" width="22" height="10"/><circle cx="62" cy="47" r="3" fill="#0B5C9E"/><path d="M30 34h40M30 26h40M30 18h40M8 22h14M8 40h14M78 22h14M78 40h14" stroke-width="1.5"/></svg></div>
+<div>
+<h3>Electro-Pneumatic Automation with PLC</h3><p class="hrs">8 hours</p>
+<div class="cols">
+<div><h4>Morning session</h4><ul>
+<li><b>PLC fundamentals:</b> PLC architecture, programming environments, and control chain in electro-pneumatic systems.</li>
+<li><b>Sensor integration:</b> connecting sensors to PLCs based on specifications.</li></ul></div>
+<div><h4>Afternoon session</h4><ul>
+<li><b>PLC programming:</b> developing PLC logic control using electro-pneumatic elements.</li>
+<li><b>Commissioning:</b> communicating with and commissioning PLC systems from a PC.</li></ul></div>
+</div>
+<p class="out"><b>Outcomes:</b> use electro-pneumatics, sensors, and PLCs in control systems, develop and troubleshoot PLC-controlled electro-pneumatic systems, and automate controls with PLC programming.</p>
+</div></div>
+
+<div class="panel" role="tabpanel" id="p5" aria-labelledby="t5">
+<div class="art"><svg viewBox="0 0 100 70" fill="none" stroke="#0B5C9E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="10" y="6" width="80" height="48" rx="4"/><path d="M34 64h32M50 54v10"/><path d="M20 42l16-18 12 11 22-22" stroke-width="3"/></svg></div>
+<div>
+<h3>Simulation Software and Review</h3><p class="hrs">8 hours</p>
+<div class="cols">
+<div><h4>Morning session</h4><ul>
+<li><b>Industrial simulation software:</b> basics of simulation software for designing and testing automated systems.</li>
+<li><b>Virtual commissioning:</b> hands-on exercises in using simulation software to commission and optimize mechatronic systems.</li></ul></div>
+<div><h4>Afternoon session</h4><ul>
+<li><b>Case studies and review:</b> analysis of real-world applications and a Q&amp;A session to consolidate learning.</li></ul></div>
+</div>
+<p class="out"><b>Outcomes:</b> simulate, design, and troubleshoot automated systems in a virtual environment.</p>
+</div></div>
+
+<p class="benefit">Participants gain extensive knowledge and practical skills in pneumatic and electro-pneumatic systems, advanced pneumatics, PLC integration, and industrial simulation software. The mix of theory and hands-on practice prepares learners for real-world challenges in automation and control systems.</p>
+</div>
+</section>
+
+<section class="fees" id="fees">
+<div class="wrap">
+<h2>Fees and enrollment terms</h2>
+<p class="sub">One fee covers all five days. Please read the payment and cancellation terms before you register.</p>
+<div class="two">
+<div class="price">
+<div class="big">₹9,000 /-</div>
+<p>Training fee per participant</p>
+<h3>Included</h3>
+<ul><li>Comprehensive training sessions</li><li>Course materials</li></ul>
+<h3>Not included</h3>
+<ul><li>Additional software or equipment costs</li></ul>
+</div>
+<div class="terms">
+<h3>Payment terms</h3>
+<p style="margin:0 0 20px">Pay 50% in advance to confirm your registration. Pay the balance before training begins.</p>
+<h3>Cancellation policy</h3>
+<table>
+<thead><tr><th scope="col">When you cancel</th><th scope="col">Cancellation fee</th></tr></thead>
+<tbody>
+<tr><td>7 days before the start date</td><td>10%</td></tr>
+<tr><td>3 days before the start date</td><td>20%</td></tr>
+<tr><td>Last minute, or no-show</td><td>No refund</td></tr>
+</tbody></table>
+</div>
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<h2>Book your seat</h2>
+<p class="sub">Call, message or email to ask about the next batch dates and to confirm your registration.</p>
+<p class="who">Mr Sameer</p>
+<p class="lines"><a href="tel:+919916768853">9916768853</a><br><a href="mailto:sameerkhangv@gmail.com">sameerkhangv@gmail.com</a></p>
+<div class="cta">
+<a class="btn main" href="tel:+919916768853">Call 9916768853</a>
+<a class="btn ghost" href="https://wa.me/919916768853?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20the%20Pneumatic%20and%20Electro-Pneumatic%20Control%20training." target="_blank" rel="noopener">Message on WhatsApp</a>
+<a class="btn ghost" href="mailto:sameerkhangv@gmail.com?subject=Enquiry%3A%20Pneumatic%20and%20Electro-Pneumatic%20Training">Send an email</a>
+</div>
+</div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© EOS Technologies. All rights reserved.</span><span>Industrial Pneumatic and Electro-Pneumatic Control Training Program</span></div></footer>
+
+<script>
+(function(){
+var tabs=[].slice.call(document.querySelectorAll('[role=tab]'));
+var panels=tabs.map(function(t){return document.getElementById(t.getAttribute('aria-controls'));});
+function show(i,focus){
+tabs.forEach(function(t,j){t.setAttribute('aria-selected',j===i);t.tabIndex=j===i?0:-1;panels[j].hidden=j!==i;});
+if(focus)tabs[i].focus();
+}
+tabs.forEach(function(t,i){
+t.addEventListener('click',function(){show(i)});
+t.addEventListener('keydown',function(e){
+if(e.key==='ArrowRight')show((i+1)%tabs.length,true);
+if(e.key==='ArrowLeft')show((i+tabs.length-1)%tabs.length,true);
+});
+});
+show(0);
+})();
+</script>
+</body>
+</html>
