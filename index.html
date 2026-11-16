@@ -89,7 +89,20 @@ section h2{font-size:clamp(34px,5vw,52px);margin-bottom:14px}
 footer{background:#08142B;color:#9FB6C9;font-size:14px;padding:20px 0}
 footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 
+img.cover{width:100%;height:210px;object-fit:cover;border-radius:12px;margin-bottom:14px}
+.cards3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.cards3 h3{font-size:28px;margin-bottom:8px}
+.cards3 p{margin:0;font-size:16px}
+.partner{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center;margin-top:48px}
+.partner img.photo{border-radius:14px}
+.partner img.pl{width:260px;margin-top:10px}
+.emp{display:grid;grid-template-columns:1fr 1.5fr;gap:44px;align-items:center}
+.circ{display:grid;gap:18px;justify-items:center}
+.circ img{width:min(260px,100%);aspect-ratio:1;object-fit:cover;border-radius:50%;border:8px solid var(--blue)}
+.contact p.t{max-width:46em;color:#E1EEF9;margin:0 0 14px}
+.contact .addr{margin:0 0 24px;color:#E1EEF9}
 @media (max-width:860px){
+.cards3,.partner,.emp{grid-template-columns:1fr}
 .hero .wrap,.two,.prog,.work .grid{grid-template-columns:1fr}
 .why{grid-template-columns:1fr 1fr}
 .flip{direction:ltr}
@@ -108,6 +121,7 @@ section{padding:56px 0}
 <a href="#about">About</a>
 <a href="#programs">Programs</a>
 <a href="#workshop">Workshop</a>
+<a href="genai-workshop.html">GenAI Workshop</a>
 <a href="#why">Why GVS</a>
 <a href="#contact" class="btn main">Enquire</a>
 </nav>
@@ -144,6 +158,25 @@ section{padding:56px 0}
 <h3>Our vision</h3>
 <p>Our vision is to become a leading centre of excellence in advanced technology education. We aim to inspire and nurture future leaders who will drive innovation and shape the world with groundbreaking solutions in Mechatronics, Data Science (AI and ML), and Electric Vehicles.</p>
 <p>We believe that learning is a lifelong journey, and our goal is to provide a dynamic and supportive environment where curiosity is encouraged and creativity is unleashed. We focus on practical learning to equip students with the skills needed for real-world jobs. To support this, we provide placement and internship opportunities, ensuring students gain hands-on experience and a smooth transition into their careers.</p>
+</div>
+</div>
+<div class="wrap partner">
+<img class="photo" src="images/about-us.jpg" alt="Keyboard keys with the words About Us" width="900" height="600" loading="lazy">
+<div>
+<p><b>GVS Technology is an Authorised Associate Partner with Janatics India Pvt Ltd</b>, and our Dealers, Channel Partners, and Distributors are from this trusted network, ensuring you receive the best support and resources.</p>
+<img class="pl" src="images/janatics.png" alt="Janatics logo" width="260" height="33" loading="lazy">
+</div>
+</div>
+</section>
+
+<section id="explore">
+<div class="wrap">
+<h2>Explore the future of technologies</h2>
+<p class="sub">Mechatronics, Data Science (AI, ML) and Electric Vehicles.</p>
+<div class="cards3">
+<div><img class="cover" src="images/robot.jpg" alt="Humanoid robot connected to a network of icons" loading="lazy"><h3>Mechatronics (Robotics and Automation)</h3><p>Dive into the world of automation and robotics with our comprehensive Mechatronics training. Learn to design, build, and program automated systems that are revolutionising industries worldwide. Our curriculum covers everything from fundamental principles to advanced applications, ensuring that our students are well-prepared for the future of work.</p></div>
+<div><img class="cover" src="images/data-science.jpg" alt="Hand holding a glowing data science graphic" loading="lazy"><h3>Data Science (AI and ML)</h3><p>Unlock the potential of data with our Data Science training that delves into Artificial Intelligence and Machine Learning. Gain expertise in data analytics, predictive modelling and AI algorithms that are transforming how businesses operate. Whether you are new to the field or looking to advance your skills, our training is designed to help you achieve your goals.</p></div>
+<div><img class="cover" src="images/ev-systems.jpg" alt="Electric vehicle systems diagram" loading="lazy"><h3>Electric Vehicles</h3><p>Step into the future of transportation with our Electric Vehicles training. Learn about the latest advancements in EV technologies, from battery systems to vehicle dynamics, and become a part of the global shift toward sustainable mobility. Our practical approach ensures that you gain not only theoretical knowledge but also hands-on experience with cutting-edge EV technologies.</p></div>
 </div>
 </div>
 </section>
@@ -203,6 +236,43 @@ section{padding:56px 0}
 </div>
 </section>
 
+<section id="empower">
+<div class="wrap emp">
+<div class="circ">
+<img src="images/ai.jpg" alt="Glowing AI hologram above an open hand" loading="lazy">
+<img src="images/robot.jpg" alt="Humanoid robot thinking" loading="lazy">
+</div>
+<div>
+<h2>Empowering futures with advanced technological education</h2>
+<p>At GVS Technology, we are committed to empowering individuals and businesses with cutting-edge education and training in Mechatronics (Robotics and Automation Technologies), Data Science (AI and ML), and Electric Vehicles (EV). Our industry-relevant programs equip you with the skills needed to excel in the rapidly evolving tech landscape. We provide hands-on experience in advanced robotics, AI, ML, and EV technologies, with strong support for internships and placements to ensure our students gain valuable real-world experience and career opportunities.</p>
+<p>We focus on practical learning to equip students with the skills needed for real-world jobs. Additionally, we provide placement and internship opportunities, ensuring students gain hands-on experience and a smooth transition into their careers.</p>
+<h3 style="font-size:32px;margin:24px 0 8px">Pioneering technological education for a brighter tomorrow</h3>
+<p>We offer cutting-edge training in the most innovative fields of technology. Based in Bangalore, our specialised programs cover Mechatronics (Robotics and Automation Technologies), Data Science (AI and ML), and Electric Vehicles (EV). Each training is meticulously designed to provide you with the expertise and hands-on experience required to excel in these fast-evolving domains. Whether you are looking to advance your career or start a new one, our training equips you with the knowledge and skills to thrive in the future of technology.</p>
+</div>
+</div>
+</section>
+
+<section id="genai" class="alt">
+<div class="wrap two">
+<div>
+<h2>New: GenAI Workshop</h2>
+<p>Job-readiness for Computer Science students in the Generative AI era. Learners use Generative AI platforms to improve productivity, communication, analytical thinking and professional readiness for AI-augmented software careers.</p>
+<ul class="models">
+<li>Building job-readiness skills in the AI era</li>
+<li>Smart work with Gen AI for professional excellence</li>
+<li>Optimizing AI interaction: prompt engineering</li>
+<li>AI-powered career development</li>
+<li>AI applications in workplace scenarios</li>
+</ul>
+</div>
+<div class="fee">
+<div class="big">40 hours</div>
+<p>5 modules plus a capstone project: an AI-driven job readiness portfolio.</p>
+<a class="btn main" href="genai-workshop.html">View the GenAI Workshop</a>
+</div>
+</div>
+</section>
+
 <section id="workshop" class="work">
 <div class="wrap grid">
 <div>
@@ -227,7 +297,7 @@ section{padding:56px 0}
 <section id="why">
 <div class="wrap">
 <h2>Why choose GVS Technology?</h2>
-<p class="sub">We deliver high-quality education tailored to the demands of the modern tech landscape. Whether you are a student aiming to kickstart your career or a professional looking to upskill, we offer a pathway to success.</p>
+<p class="sub">At GVS Technology, we pride ourselves on delivering high-quality education that is tailored to meet the demands of the modern tech landscape. Our experienced instructors, state-of-the-art facilities, and industry collaborations provide a unique learning experience that is both engaging and impactful. Whether you are a student aiming to kickstart your career or a professional looking to upskill, GVS Technology offers a pathway to success. Additionally, GVS Technology is an Authorised Associate Partner with Janatics India Pvt Ltd., and our Dealers, Channel Partners, and Distributors are from this trusted network, ensuring you receive the best support and resources.</p>
 <div class="why">
 <div><h3>Experienced instructors</h3><p>Learn from trainers who work with the technology you are studying.</p></div>
 <div><h3>State-of-the-art facilities</h3><p>Practice on real training stations and kits, not only slides.</p></div>
@@ -240,9 +310,12 @@ section{padding:56px 0}
 <section id="contact" class="contact">
 <div class="wrap">
 <h2>Start your journey to success in tech</h2>
-<p class="sub">Ready to transform your future with the skills that matter? Contact us to learn about our programs and upcoming batches.</p>
-<p class="who">Mr Sameer Khan</p>
-<p class="lines"><a href="tel:+919916768853">9916768853</a><br><a href="mailto:sameerkhangv@gmail.com">sameerkhangv@gmail.com</a></p>
+<p class="t">Are you ready to transform your future with the skills that matter? Join GVS Technology and be a part of the technological revolution. With our commitment to excellence, we provide the knowledge, tools, and support you need to excel in the fields of Mechatronics, Data Science (AI, ML) and Electric Vehicles. Start your journey with GVS Technology and unlock endless possibilities.</p>
+<h3 style="color:#fff;font-size:30px;margin:22px 0 8px">Get started with GVS Technology today</h3>
+<p class="t">Ready to take the next step in your career? We are committed to your success and growth in the tech industry. Whether you are looking to enhance your skills or start a new career path, our training is designed to help you achieve your goals. Contact us today to learn more about our programs and how we can help you on your journey. Let GVS Technology be your partner in building a brighter, more technologically advanced future. Your future in tech starts here!</p>
+<p class="who" style="margin-top:22px">Mr Sameer</p>
+<p class="lines"><a href="tel:+919916768853">9916768853</a> &nbsp;·&nbsp; <a href="tel:+919480967253">+91 9480967253</a><br><a href="mailto:sameerkhangv@gmail.com">sameerkhangv@gmail.com</a></p>
+<p class="addr">#3, 2nd Cross, Tuba Layout, Near Manyata Techpark, Nagavara Main Road, Bengaluru - 77</p>
 <div class="cta">
 <a class="btn main" href="tel:+919916768853">Call 9916768853</a>
 <a class="btn ghost" href="https://wa.me/919916768853?text=Hello%2C%20I%20would%20like%20to%20know%20more%20about%20GVS%20Technology%20training%20programs." target="_blank" rel="noopener">Message on WhatsApp</a>

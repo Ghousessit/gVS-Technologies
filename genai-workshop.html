@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GenAI Workshop | GVS Technology</title>
+<meta name="description" content="A 40-hour GenAI Workshop that prepares Computer Science students to use Generative AI tools in coding, communication, problem-solving and career preparation.">
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0E2349;--blue:#274F96;--cyan:#1E9BD7;--paper:#F4F8FC;--line:#D6E2EE;--accent:#C2410C;--muted:#4A5B6B;--text:#1B2B3A}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Barlow,system-ui,Arial,sans-serif;font-size:17px;line-height:1.65;color:var(--text);background:#fff}
+h1,h2,h3{font-family:'Barlow Condensed','Arial Narrow',sans-serif;line-height:1.05;margin:0;color:var(--ink);font-weight:700}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--blue)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.btn{display:inline-block;padding:13px 22px;border-radius:4px;font-weight:600;text-decoration:none;font-size:16px;border:2px solid transparent}
+.btn.main{background:var(--accent);color:#fff}
+.btn.main:hover{background:#9A3412}
+.btn.ghost{border-color:#9CC9EA;color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.12)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+.brand img{height:62px;width:auto}
+nav{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+nav a{color:var(--ink);text-decoration:none;font-weight:500}
+nav a:hover{color:var(--blue)}
+nav a.btn{color:#fff;padding:9px 16px}
+.hero{background:linear-gradient(135deg,var(--ink) 0%,var(--blue) 70%,#1E7FBE 100%);color:#fff;padding:72px 0 64px}
+.hero h1{color:#fff;font-size:clamp(46px,8vw,92px)}
+.hero p{font-size:20px;color:#E1EEF9;max-width:36em;margin:18px 0 28px}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 28px;padding:0;list-style:none}
+.chips li{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:7px 16px;border-radius:999px;font-weight:600;font-size:15px}
+section{padding:70px 0}
+section h2{font-size:clamp(32px,5vw,50px);margin-bottom:14px}
+.sub{max-width:44em;color:var(--muted);margin:0 0 28px;font-size:18px}
+.alt{background:var(--paper);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.hub{width:max-content;max-width:100%;margin:0 auto;background:var(--ink);color:#fff;font-family:'Barlow Condensed',sans-serif;font-size:26px;font-weight:700;line-height:1.1;text-align:center;padding:16px 28px;border-radius:12px}
+.pillars{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:0;position:relative;padding-top:28px}
+.pillars:before{content:"";position:absolute;top:0;left:25%;right:25%;height:28px;border:2px dashed #9CC9EA;border-bottom:0;border-radius:12px 12px 0 0}
+.pillars:after{content:"";position:absolute;top:-14px;left:50%;height:14px;border-left:2px dashed #9CC9EA}
+.pil{background:#fff;border:1px solid var(--line);border-top:5px solid var(--c);border-radius:8px;padding:20px 22px}
+.pil h3{font-size:26px;margin-bottom:8px}
+.pil ul{margin:0;padding-left:20px;color:var(--muted)}
+.cols2{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.cols2 h2{font-size:clamp(30px,4vw,42px)}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.checks li{background:#fff;border:1px solid var(--line);border-left:4px solid var(--cyan);border-radius:4px;padding:11px 16px}
+.bar{display:flex;gap:4px;margin:6px 0 40px}
+.bar div{background:var(--blue);color:#fff;font-weight:600;font-size:14px;text-align:center;padding:10px 4px;border-radius:4px;white-space:nowrap;overflow:hidden}
+.bar div:nth-child(even){background:var(--cyan)}
+.mod{display:grid;grid-template-columns:90px 1fr;gap:22px;padding:28px 0;border-top:1px solid var(--line)}
+.mod .n{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:64px;line-height:.9;color:var(--cyan)}
+.mod h3{font-size:30px;margin-bottom:6px}
+.mod p{margin:10px 0 0}
+.hrs{display:inline-block;background:var(--ink);color:#fff;font-weight:600;font-size:14px;padding:3px 12px;border-radius:999px}
+.cap{background:var(--ink);color:#fff;border-radius:12px;padding:36px;margin-top:12px}
+.cap h3{color:#fff;font-size:34px;margin-bottom:10px}
+.cap p{margin:0;color:#E1EEF9}
+.close{max-width:46em;font-size:20px;line-height:1.55;color:var(--ink)}
+.contact{background:linear-gradient(135deg,var(--ink),var(--blue));color:#fff}
+.contact h2{color:#fff}
+.contact .sub{color:#E1EEF9}
+.contact .who{font-family:'Barlow Condensed',sans-serif;font-size:30px;margin:0 0 4px}
+.contact .lines{margin:0 0 24px}
+.contact .lines a{color:#fff}
+footer{background:#08142B;color:#9FB6C9;font-size:14px;padding:20px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:860px){.cols2{grid-template-columns:1fr}section{padding:52px 0}}
+@media (max-width:600px){.pillars{grid-template-columns:1fr}.pillars:before,.pillars:after{display:none}.pillars{padding-top:14px}.mod{grid-template-columns:1fr;gap:6px}.mod .n{font-size:44px}.bar div{font-size:12px;padding:8px 2px}}
+</style>
+</head>
+<body>
+<header>
+<div class="wrap">
+<a class="brand" href="index.html"><img src="images/logo.png" alt="GVS Technology" width="85" height="62"></a>
+<nav aria-label="Main">
+<a href="index.html">Home</a>
+<a href="#modules">Modules</a>
+<a href="#contact" class="btn main">Enquire</a>
+</nav>
+</div>
+</header>
+
+<main>
+<div class="hero">
+<div class="wrap">
+<h1>GenAI Workshop</h1>
+<p>Job-readiness for Computer Science students in the Generative AI era: use AI tools in coding, communication, problem-solving and career preparation.</p>
+<ul class="chips"><li>40 hours</li><li>5 modules and a capstone project</li><li>Hands-on with AI platforms</li></ul>
+<div class="cta"><a class="btn main" href="#contact">Enquire about this workshop</a><a class="btn ghost" href="#modules">See the modules</a></div>
+</div>
+</div>
+
+<section>
+<div class="wrap">
+<h2>Program overview</h2>
+<p class="sub">The rapid adoption of Generative AI is redefining roles in software engineering, data science, cloud computing, and product development. This program prepares Computer Science students to integrate AI tools into technical workflows such as coding, debugging, documentation, problem-solving, and career preparation. Learners gain hands-on experience with Generative AI platforms to enhance productivity, communication, analytical thinking, and professional readiness in AI-augmented software careers.</p>
+<div class="hub">Generative AI in<br>Placement Training</div>
+<div class="pillars">
+<div class="pil" style="--c:#C2410C"><h3>Productivity enhancement</h3><ul><li>AI tools integration</li><li>Workflow optimization</li></ul></div>
+<div class="pil" style="--c:#274F96"><h3>Communication improvement</h3><ul><li>AI-driven communication tools</li><li>Enhanced collaboration</li></ul></div>
+<div class="pil" style="--c:#2F7D32"><h3>Career readiness</h3><ul><li>Skill development</li><li>Industry expectations</li></ul></div>
+<div class="pil" style="--c:#1E9BD7"><h3>Problem-solving skills</h3><ul><li>AI-based analytical techniques</li><li>Creative problem-solving</li></ul></div>
+</div>
+</div>
+</section>
+
+<section class="alt">
+<div class="wrap cols2">
+<div>
+<h2>Program objectives</h2>
+<ul class="checks">
+<li>Equip learners with AI-driven technical job-readiness skills.</li>
+<li>Enhance employability through software development and life skills using Generative AI tools.</li>
+<li>Understand industry expectations and align skills accordingly.</li>
+<li>Apply AI for resume building, interview preparation, GitHub profiling and networking.</li>
+<li>Develop problem-solving and decision-making skills using AI.</li>
+</ul>
+</div>
+<div>
+<h2>Learning outcomes</h2>
+<p style="margin:0 0 12px;color:var(--muted)">By the end of this program, participants will:</p>
+<ul class="checks">
+<li>Use Generative AI tools to accelerate coding, testing, documentation, and debugging tasks.</li>
+<li>Apply AI for collaborative software development and technical communication.</li>
+<li>Build AI-enhanced resumes, GitHub profiles, cover letters, and LinkedIn branding.</li>
+<li>Demonstrate critical thinking and adaptability in AI-assisted engineering environments.</li>
+<li>Apply ethical and responsible AI practices in technical workplaces.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="modules">
+<div class="wrap">
+<h2>Five modules, 40 hours</h2>
+<p class="sub">Hours per module, followed by the capstone project that runs through the program.</p>
+<div class="bar" role="img" aria-label="Module hours: 6, 10, 10, 8, 6">
+<div style="flex:6">M1 · 6h</div><div style="flex:10">M2 · 10h</div><div style="flex:10">M3 · 10h</div><div style="flex:8">M4 · 8h</div><div style="flex:6">M5 · 6h</div>
+</div>
+
+<div class="mod"><div class="n">01</div><div>
+<h3>Building job-readiness skills in the AI era</h3><span class="hrs">6 hours</span>
+<p>In today’s AI-driven job market, adaptability and evolving skill sets are crucial for professional success. This module explores the fundamental employability skills required to thrive in AI-augmented workplaces, distinguishing them from general life skills. Learners will develop problem-solving, critical thinking, and emotional intelligence while understanding industry expectations, workplace ethics, and effective communication for collaboration. By the end, participants will be better equipped to align their skill sets with evolving job roles such as software developer, QA engineer, DevOps engineer, and data analyst and workplace demands.</p></div></div>
+
+<div class="mod"><div class="n">02</div><div>
+<h3>Smart work with Gen AI for professional excellence</h3><span class="hrs">10 hours</span>
+<p>Generative AI is revolutionizing how professionals work by automating routine tasks and enhancing efficiency. This module delves into AI-powered productivity tools, enabling learners to enhance coding productivity through intelligent documentation, test-case generation, debugging assistance, code explanation, AI-assisted research, report writing, email drafting, and data analysis. Ethical AI use, decision-making support, and AI-assisted research methodologies are explored to help professionals optimize workflows while maintaining accuracy and integrity. Participants will gain hands-on experience with AI tools, making them more effective and competitive in their fields.</p></div></div>
+
+<div class="mod"><div class="n">03</div><div>
+<h3>Optimizing AI interaction: the art of prompt engineering</h3><span class="hrs">10 hours</span>
+<p>Interacting effectively with AI requires mastering the skill of crafting precise and structured prompts to generate accurate responses and obtain reliable outputs for coding support, API documentation, error resolution, algorithm design, and system explanations. Learners gain experience in refining prompts, debugging model responses, controlling outputs, and using AI tools for brainstorming software solutions and automation scripts. This module provides hands-on training in designing prompts that maximize AI’s capabilities while minimizing errors. Learners will explore how AI models interpret instructions, refine AI-generated outputs, and use AI tools for brainstorming, content creation, and automation. With a focus on optimizing communication with AI, participants will enhance their ability to leverage AI for various professional applications.</p></div></div>
+
+<div class="mod"><div class="n">04</div><div>
+<h3>AI-powered career development</h3><span class="hrs">8 hours</span>
+<p>Generative AI can sharpen every step of a job search. This module shows learners how to use AI tools to build and refine resumes, cover letters, GitHub profiles, and LinkedIn branding, prepare for interviews, and network with confidence. Learners map their skills to roles such as software developer, QA engineer, DevOps engineer, and data analyst, and plan their next career steps with AI support.</p></div></div>
+
+<div class="mod"><div class="n">05</div><div>
+<h3>AI applications in workplace scenarios</h3><span class="hrs">6 hours</span>
+<p>AI is increasingly shaping workplace collaboration, teamwork, and business decision-making across industries. This module provides practical insights into AI-powered tools for enhancing workplace efficiency, including meeting summarization, automated transcriptions, and data-driven decision support. Learners will analyze real-world industry-specific AI applications, exploring how AI aids market research, competitive analysis, and business strategy development. Also, learners explore how AI integrates into agile workflows, DevOps pipelines, and cross-functional team collaboration. By understanding AI’s role in different sectors, participants will gain a competitive edge in integrating AI into their professional environments.</p></div></div>
+
+<div class="cap">
+<h3>Capstone project: AI-driven job readiness portfolio</h3>
+<p>Throughout the program, participants will apply their AI-driven skills to build a comprehensive job readiness portfolio, integrating AI tools for resume enhancement, cover letter optimization, and interview preparation. The project culminates in a final presentation where learners showcase their AI-augmented career strategy. Industry mentors and peers will provide feedback, helping participants refine their portfolios and improve their job market readiness. This hands-on project ensures learners leave the program with tangible, AI-enhanced career assets, ready to make a strong impression in their professional journeys.</p>
+</div>
+</div>
+</section>
+
+<section class="alt">
+<div class="wrap">
+<p class="close">This program provides a structured approach to developing job readiness in the Generative AI era. It combines foundational knowledge, practical application, and hands-on experience to prepare learners for the evolving job market. By the end of the curriculum, participants will have a well-rounded understanding of AI tools, employability skills, and career readiness strategies essential for success in an AI-driven workforce.</p>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+<h2>Bring the GenAI Workshop to your college</h2>
+<p class="sub">Contact us for batch dates, fees and schedule options.</p>
+<p class="who">Mr Sameer</p>
+<p class="lines"><a href="tel:+919916768853">9916768853</a> &nbsp;·&nbsp; <a href="tel:+919480967253">+91 9480967253</a><br><a href="mailto:sameerkhangv@gmail.com">sameerkhangv@gmail.com</a></p>
+<div class="cta">
+<a class="btn main" href="tel:+919916768853">Call 9916768853</a>
+<a class="btn ghost" href="https://wa.me/919916768853?text=Hello%2C%20I%20would%20like%20to%20enquire%20about%20the%20GenAI%20Workshop." target="_blank" rel="noopener">Message on WhatsApp</a>
+<a class="btn ghost" href="mailto:sameerkhangv@gmail.com?subject=Enquiry%3A%20GenAI%20Workshop">Send an email</a>
+</div>
+</div>
+</section>
+</main>
+<footer><div class="wrap"><span>© GVS Technology. All rights reserved.</span><a href="index.html" style="color:#9FB6C9">Back to home</a></div></footer>
+</body>
+</html>
